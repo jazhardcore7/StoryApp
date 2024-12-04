@@ -137,9 +137,9 @@ class RegisterActivity : AppCompatActivity() {
     }
     private fun playAnimation() {
         ObjectAnimator.ofFloat(binding.imageView, View.TRANSLATION_X, -30f, 30f).apply {
-            duration = 6000
+            duration = 8000
             repeatCount = ObjectAnimator.INFINITE
-            repeatMode = ObjectAnimator.REVERSE
+            repeatMode = ObjectAnimator.RESTART
         }.start()
 
         val title = ObjectAnimator.ofFloat(binding.titleTextView, View.ALPHA, 1f).setDuration(100)
