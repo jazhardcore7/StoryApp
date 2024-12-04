@@ -50,16 +50,22 @@ class WelcomeActivity : AppCompatActivity() {
     }
 
     private fun playAnimation() {
-        ObjectAnimator.ofFloat(binding.imageView, View.TRANSLATION_X, -30f, 30f).apply {
-            duration = 6000
-            repeatCount = ObjectAnimator.INFINITE
-            repeatMode = ObjectAnimator.REVERSE
-        }.start()
+        val translation = ObjectAnimator.ofFloat(binding.imageView, View.TRANSLATION_Y, -500f, 0f).apply {
+            duration = 1000
+            repeatCount = 0
+        }
 
-        val login = ObjectAnimator.ofFloat(binding.loginButton, View.ALPHA, 1f).setDuration(100)
-        val signup = ObjectAnimator.ofFloat(binding.signupButton, View.ALPHA, 1f).setDuration(100)
-        val title = ObjectAnimator.ofFloat(binding.titleTextView, View.ALPHA, 1f).setDuration(100)
-        val desc = ObjectAnimator.ofFloat(binding.descTextView, View.ALPHA, 1f).setDuration(100)
+        val fadeInImageView = ObjectAnimator.ofFloat(binding.imageView, View.ALPHA, 0f, 1f).setDuration(1000)
+
+        AnimatorSet().apply {
+            playTogether(translation, fadeInImageView)
+            start()
+        }
+
+        val login = ObjectAnimator.ofFloat(binding.loginButton, View.ALPHA, 0f, 1f).setDuration(500)
+        val signup = ObjectAnimator.ofFloat(binding.signupButton, View.ALPHA, 0f, 1f).setDuration(500)
+        val title = ObjectAnimator.ofFloat(binding.titleTextView, View.ALPHA, 0f, 1f).setDuration(700)
+        val desc = ObjectAnimator.ofFloat(binding.descTextView, View.ALPHA, 0f, 1f).setDuration(700)
 
         val together = AnimatorSet().apply {
             playTogether(login, signup)
@@ -70,4 +76,6 @@ class WelcomeActivity : AppCompatActivity() {
             start()
         }
     }
+
+
 }
