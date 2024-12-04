@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">StoryApp</string>
+    <string name="signup">Daftar</string>
+    <string name="login">Masuk</string>
+    <string name="welcome_text">All your learning needs is here only at Dicoding</string>
+    <string name="header_welcome">Welcome to Dicoding</string>
+    <string name="header_signup">Lengkapi data diri untuk membuat akun</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login_text">Masukkan Email dan Passwordnya</string>
+    <string name="header_login">Lets start your developer journey</string>
+    <string name="name">Nama</string>
+    <string name="message_main_page">Selamat Belajar di Dicoding.</string>
+    <string name="greeting">Halo</string>
+    <string name="logout">Keluar</string>
+    <string name="add_story">Add as Story</string>
+    <string name="story_title">Story Title</string>
+    <string name="story_description">Story description</string>
+    <string name="image">Image</string>
+    <string name="login_image">login image</string>
+    <string name="nothing">Belum ada cerita untuk ditampilkan</string>
+    <string name="galeri">Galeri</string>
+    <string name="kamera">Kamera</string>
+    <string name="masukkan_deskripsi">Masukkan Deskripsi</string>
+    <string name="post_cerita">Post Cerita</string>
+    <string name="empty_image_warning">Silakan masukkan berkas gambar terlebih dahulu.</string>
+    <string name="log_out">Log Out</string>
+    <string name="main_activity">Main Activity</string>
+</resources>
